@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prénom Nom – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="blocks" aria-label="Navigation principale">
+  <a class="block" href="#bureau" data-jump>Bureau</a>
+  <a class="block" href="#atelier" data-jump>Atelier</a>
+  <a class="block" href="#montagne" data-jump>Passions</a>
+</nav>
+<div id="hero" class="hero" aria-hidden="true"></div>
+<div class="ground" aria-hidden="true"></div>
+
+<main>
+  <section id="bureau" class="zone" data-outfit="bureau">
+    <h1>Terry RAMUS</h1>
+    <p class="hint">Faites défiler la page ou tapez sur un bloc : mon personnage vous guide.</p>
+    <div class="panel">
+      <h2>Compétences</h2>
+      <ul id="skills" class="chips"></ul>
+      <h2>Qualités</h2>
+      <ul id="qualities" class="chips"></ul>
+      <a class="btn" href="cv.pdf" data-jump>Voir mon CV et actuellement en Construction <br>Merci pour ce désagrément.</a>
+    </div>
+  </section>
+
+  <section id="atelier" class="zone" data-outfit="atelier">
+    <div class="cube" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <h2>L'atelier : projets en cours</h2>
+    <div id="projects" class="cards"></div>
+  </section>
+
+  <section id="montagne" class="zone" data-outfit="montagne">
+    <h2>Hobbies et passions</h2>
+    <ul id="hobbies" class="cards"></ul>
+    <a class="btn" href="mailto:votre.adresse@exemple.fr" data-jump>Me contacter</a>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
